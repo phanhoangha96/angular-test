@@ -1,6 +1,6 @@
 <select class="form-control" [(ngModel)]="keyType">
-  <option [ngValue]="'Numeric'" selected>Numeric</option>
-  <option [ngValue]="'Random'">Random</option>
+  <option selected>Choose...</option>
+  <option *ngFor="let task of tasks">{{task.name}}</option>
 </select>
 
 {{keyType}}

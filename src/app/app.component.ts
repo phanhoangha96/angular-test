@@ -8,10 +8,27 @@ import { Component } from "@angular/core";
 export class AppComponent {
   name = "Angular 6";
   keyType: any = "Numeric";
-  task: {
-    [id: 1name: "AngularJS"]: ;
-    [id: 2name: "ReactJS"]: ;
-    [id: 2name: "VueJS"]: ;
-    [id: 3name: "NodeJS"]: ;
-  };
+  tasks: Task[] = [
+    {
+      id: 1,
+      name: "AngularJS"
+    },
+    {
+      id: 2,
+      name: "ReactJS"
+    },
+    {
+      id: 3,
+      name: "VueJS"
+    },
+    {
+      id: 4,
+      name: "NodeJS"
+    }
+  ];
+}
+
+export interface Task {
+  id: number;
+  name: string;
 }
